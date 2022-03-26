@@ -12,9 +12,7 @@ app.use(cors({origin: '*',methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH'
 const httpServer = createServer(app);
 
 
-try{}
-catch(err)
-{
+try{
 
 //online users
 let onlineusers=[];
@@ -162,6 +160,12 @@ app.use(express.json());
     
     
   });
+
+
+}
+catch(err)
+{
+  
 
 }
 
